@@ -1,0 +1,27 @@
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    --bs-navbar-color: white;
+    --bs-navbar-brand-color: white;
+
+}
+
+
+.navbar-toggler-icon {
+    background-image: url(../../../public/menu-svgrepo-com.svg)
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+} 
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: #e74c3c;
+}
+
+#colorHome{
+    color:#e74c3c
+}

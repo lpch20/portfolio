@@ -1,5 +1,59 @@
-.containerHome{
+.containerHome {
     background-color: black;
     height: 100vh;
     width: auto;
+}
+
+.titleHome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titleHome h1 {
+    margin-right: 10px;
+    /* Ajusta el espacio entre los elementos según tus preferencias */
+}
+
+/* O, si prefieres el espacio en el lado izquierdo del segundo h1 */
+.titleHome .name {
+    margin-left: 10px;
+}
+
+.titleHome h1 {
+    color: rgb(99, 98, 97)
+}
+
+.profileImg{
+    width: 160px;
+    border-radius: 80px;
+    border-color: rgb(99, 98, 97);
+    border-width: 5spx;
+    border-style: solid;
+}
+
+.containerImg{
+    display: flex;
+    justify-content: center;
+}
+
+.firstSection{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleHome{
+    display: flex;
+    padding-left: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatIDoSection{
+   text-align: center;
 }
