@@ -2,16 +2,25 @@ import "animate.css";
 import "./home.css";
 import NavBar from "./../../components/NavBar/NavBar.jsx";
 import "animate.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Home() {
   const [modal, setModal] = useState(false);
+  const [modal2, setModal2] = useState(false);
 
   const handleStateModal = () => {
     if (modal) {
       setModal(false);
     } else {
       setModal(true);
+    }
+  };
+
+  const handleStateModal2 = () => {
+    if (modal2) {
+      setModal2(false);
+    } else {
+      setModal2(true);
     }
   };
 
@@ -56,7 +65,15 @@ function Home() {
           ) : (
             <div className="containerCards animate__animated animate__jackInTheBox">
               <div className="cardWhatIDo">
-                <h4>Design + Development</h4>
+                <div className="animateDiv">
+                  <h4>Design + Development</h4>
+                  <a className="code-button code-button--html code-button--color" >
+                    <b className="code-button__bracket">&lt;</b>
+                    <span className="code-button__code">/</span>
+                    <span className="code-button__text">html</span>
+                    <b className="code-button__bracket">&gt;</b>
+                  </a>
+                </div>
                 <p>
                   As a Frontend Developer, my passion lies in crafting
                   captivating user experiences. Leveraging modern technologies
@@ -67,9 +84,18 @@ function Home() {
                   I pride myself on staying current with the latest frameworks
                   and libraries to deliver cutting-edge solutions.
                 </p>
+
               </div>
               <div className="cardWhatIDo">
-                <h4>Backend</h4>
+                <div className="animateDiv">
+                  <h4>Backend</h4>
+                  <a className="code-button code-button--html code-button--color" >
+                    <b className="code-button__bracket">&lt;</b>
+                    <span className="code-button__code">/</span>
+                    <span className="code-button__text">NodeJS</span>
+                    <b className="code-button__bracket">&gt;</b>
+                  </a>
+                </div>
                 <p>
                   In the realm of Backend Development, I excel in constructing
                   robust and secure APIs. Utilizing Node.js and Express, I
@@ -79,9 +105,18 @@ function Home() {
                   I am well-versed in employing various security libraries to
                   fortify applications against potential vulnerabilities.
                 </p>
+
               </div>
               <div className="cardWhatIDo">
-                <h4>Deployed Project</h4>
+                <div className="animateDiv">
+                  <h4>Deployed Project</h4>
+                  <a className="code-button code-button--html code-button--color" >
+                    <b className="code-button__bracket">&lt;</b>
+                    <span className="code-button__code">/</span>
+                    <span className="code-button__text">Delpoy</span>
+                    <b className="code-button__bracket">&gt;</b>
+                  </a>
+                </div>
                 <p>
                   Beyond development, I orchestrate the seamless implementation
                   and deployment of applications. My proficiency extends to the
@@ -92,13 +127,48 @@ function Home() {
                   diligently. I pride myself on delivering reliable, scalable,
                   and continuously monitored solutions.
                 </p>
+
               </div>
             </div>
           )}
         </section>
 
-        <section>
-          
+        <section className="thirdSection">
+          {!modal2 ?
+            <div>
+              <div >
+                <h1>Who I am</h1>
+              </div>
+              <div>
+                <button className="learn-more">
+                  <span className="circle" aria-hidden="true">
+                    <span className="icon arrow"></span>
+                  </span>
+                  <span onClick={handleStateModal2} className="button-text2">
+                    Learn More
+                  </span>
+                </button>
+              </div>
+            </div>
+            :
+            <div className="containerCards2 animate__animated animate__jackInTheBox">
+              <div>
+                <img src="/profile.jpg" alt="" />
+              </div>
+              <div>
+                <div className="titleWhoIAm">
+                  <h2>Full Stack Development</h2>
+                  <div className="code-loader">
+                    <span>{'{'} </span>
+                    <span>{'}'}</span>
+                  </div></div>
+                <div className="infoWhoIAm">
+                  <p>Passionate about Information Technology and specialized in Web Development with a focus on Backend. My dynamism and proactivity drive me to tackle challenges and achieve results, supported by my education and experience in web development. I am committed to contributing creative and efficient solutions to innovative projects.</p>
+                </div>
+              </div>
+            </div>
+
+          }
         </section>
       </main>
 
