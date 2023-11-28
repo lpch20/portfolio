@@ -165,7 +165,7 @@
 }
 
 .secondSection {
-  height: 100vh;
+  min-height: 100vh;
   width: auto;
   display: flex;
   justify-content: center;
@@ -261,10 +261,28 @@ button:hover .button-text {
   color: #fff;
 }
 
-.card {
-  width: 190px;
-  height: 254px;
+.cardWhatIDo {
+  padding: 20px;
+  color: white;
+  width: auto;
+  height: auto;
   border-radius: 30px;
   background: #212121;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+}
+
+.containerCards{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 20px;
+}
+
+
+@media (min-width: 1100px) {
+  .containerCards {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+  }
 }
