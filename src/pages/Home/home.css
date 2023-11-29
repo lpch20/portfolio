@@ -90,7 +90,8 @@
 }
 
 .glitch:after {
-  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
+    infinite;
   color: #00e571;
   z-index: -2;
 }
@@ -122,7 +123,6 @@
 }
 
 @keyframes shift {
-
   0%,
   40%,
   44%,
@@ -299,7 +299,6 @@ button:hover .button-text2 {
   padding-bottom: 60px;
 }
 
-
 @media (min-width: 1100px) {
   .containerCards {
     display: flex;
@@ -311,16 +310,19 @@ button:hover .button-text2 {
 .thirdSection {
   background-color: black;
   width: auto;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .thirdSection h1 {
-  color: rgb(99, 98, 97)
+  color: rgb(99, 98, 97);
 }
 
 .card {
@@ -334,12 +336,11 @@ button:hover .button-text2 {
 }
 
 .shadow {
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-    0 0 0 2px rgb(190, 190, 190),
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(190, 190, 190),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
-.containerCards2{
+.containerCards2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,7 +349,11 @@ button:hover .button-text2 {
   gap: 20px;
 }
 
-.containerCards2 h2{
+.containerCards2 img {
+  height: 580px;
+}
+
+.containerCards2 h2 {
   text-align: center;
   font-size: xx-large;
 }
@@ -377,20 +382,20 @@ button:hover .button-text2 {
   }
 }
 
-.titleWhoIAm{
+.titleWhoIAm {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.titleWhoIAm h2{
+.titleWhoIAm h2 {
   color: rgb(99, 98, 97);
 }
 
-.infoWhoIAm{
+.infoWhoIAm {
   text-align: center;
 }
-.infoWhoIAm p{
+.infoWhoIAm p {
   max-width: 430px;
   color: rgb(99, 98, 97);
 }
@@ -399,7 +404,8 @@ button:hover .button-text2 {
 
 .code-button {
   display: inline-block;
-  font-family: "Menlo", "Bitstream Vera Sans Mono", "DejaVu Sans Mono", "Monaco", "Consolas", monospace;
+  font-family: "Menlo", "Bitstream Vera Sans Mono", "DejaVu Sans Mono", "Monaco",
+    "Consolas", monospace;
   margin: 1em;
   border-radius: 3px;
   background: #434d5a;
@@ -409,10 +415,13 @@ button:hover .button-text2 {
   text-align: center;
   text-decoration: none;
   width: 9em;
-  transition: all 0.2s ease, background-color 0.2s ease-in 0.15s, box-shadow 0.2s ease-in 0.15s, color 0s ease;
+  transition: all 0.2s ease, background-color 0.2s ease-in 0.15s,
+    box-shadow 0.2s ease-in 0.15s, color 0s ease;
 }
 
-.code-button__bracket, .code-button__text, .code-button__code {
+.code-button__bracket,
+.code-button__text,
+.code-button__code {
   display: inline-block;
   margin-right: -3px;
   text-align: center;
@@ -432,14 +441,18 @@ button:hover .button-text2 {
 
 .code-button:hover {
   padding: 1em 0;
-  transition: all 0.2s ease, background-color 0.2s ease-in 0.05s, box-shadow 0.2s ease-in 0.05s, color 0s ease;
+  transition: all 0.2s ease, background-color 0.2s ease-in 0.05s,
+    box-shadow 0.2s ease-in 0.05s, color 0s ease;
 }
 
-.code-button:hover .code-button__code, .code-button:hover .code-button__text {
+.code-button:hover .code-button__code,
+.code-button:hover .code-button__text {
   width: 2em;
 }
 
-.code-button:hover .code-button__code, .code-button:hover .code-button__text, .code-button:hover .code-button__bracket {
+.code-button:hover .code-button__code,
+.code-button:hover .code-button__text,
+.code-button:hover .code-button__bracket {
   transition: all 0.2s ease, color 0s ease;
 }
 
@@ -459,23 +472,89 @@ button:hover .button-text2 {
 
 .code-button--color:hover.code-button--css {
   background-color: #aaffa9;
-  box-shadow: inset 15px 5px 70px -10px #aaffa9, inset -15px -5px 70px -10px #11ffbd;
+  box-shadow: inset 15px 5px 70px -10px #aaffa9,
+    inset -15px -5px 70px -10px #11ffbd;
 }
 
 .code-button--color:hover.code-button--html {
   background-color: #fc8f71;
-  box-shadow: inset 15px 15px 90px -20px #fc8f71, inset -15px -5px 80px -10px #fcdcab;
+  box-shadow: inset 15px 15px 90px -20px #fc8f71,
+    inset -15px -5px 80px -10px #fcdcab;
 }
 
 .code-button--color:hover.code-button--js {
   background-color: #87e1ed;
-  box-shadow: inset 15px 15px 90px -20px #7996d1, inset -15px -5px 80px -10px #87e1ed;
+  box-shadow: inset 15px 15px 90px -20px #7996d1,
+    inset -15px -5px 80px -10px #87e1ed;
 }
- 
-.animateDiv{
+
+.animateDiv {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
+.fourSection {
+  background-color: white;
+  min-height: 100vh;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.titleWork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerImage {
+  width: 100%;
+  height: 100%;
+  --s: 200px; /* control the size */
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
+}
+
+.cardContainerWork {
+  width: 190px;
+  height: 254px;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.cardWork {
+  width: 190px;
+  height: 254px;
+  background-color: #1a1a1a;
+  border-radius: ;
+  transition: all 0.2s;
+}
+
+.cardWork:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.cardContainerWork:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+}

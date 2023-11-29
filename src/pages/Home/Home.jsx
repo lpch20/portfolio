@@ -7,6 +7,7 @@ import { useState } from "react";
 function Home() {
   const [modal, setModal] = useState(false);
   const [modal2, setModal2] = useState(false);
+  const [modal3, setModal3] = useState(false);
 
   const handleStateModal = () => {
     if (modal) {
@@ -21,6 +22,14 @@ function Home() {
       setModal2(false);
     } else {
       setModal2(true);
+    }
+  };
+
+  const handleStateModal3 = () => {
+    if (modal3) {
+      setModal3(false);
+    } else {
+      setModal3(true);
     }
   };
 
@@ -52,13 +61,11 @@ function Home() {
                 <h1>What I do?</h1>
               </div>
               <div>
-                <button className="learn-more">
+                <button onClick={handleStateModal} className="learn-more">
                   <span className="circle" aria-hidden="true">
                     <span className="icon arrow"></span>
                   </span>
-                  <span onClick={handleStateModal} className="button-text">
-                    Learn More
-                  </span>
+                  <span className="button-text">Learn More</span>
                 </button>
               </div>
             </div>
@@ -67,7 +74,7 @@ function Home() {
               <div className="cardWhatIDo">
                 <div className="animateDiv">
                   <h4>Design + Development</h4>
-                  <a className="code-button code-button--html code-button--color" >
+                  <a className="code-button code-button--html code-button--color">
                     <b className="code-button__bracket">&lt;</b>
                     <span className="code-button__code">/</span>
                     <span className="code-button__text">html</span>
@@ -84,12 +91,11 @@ function Home() {
                   I pride myself on staying current with the latest frameworks
                   and libraries to deliver cutting-edge solutions.
                 </p>
-
               </div>
               <div className="cardWhatIDo">
                 <div className="animateDiv">
                   <h4>Backend</h4>
-                  <a className="code-button code-button--html code-button--color" >
+                  <a className="code-button code-button--html code-button--color">
                     <b className="code-button__bracket">&lt;</b>
                     <span className="code-button__code">/</span>
                     <span className="code-button__text">NodeJS</span>
@@ -105,12 +111,11 @@ function Home() {
                   I am well-versed in employing various security libraries to
                   fortify applications against potential vulnerabilities.
                 </p>
-
               </div>
               <div className="cardWhatIDo">
                 <div className="animateDiv">
                   <h4>Deployed Project</h4>
-                  <a className="code-button code-button--html code-button--color" >
+                  <a className="code-button code-button--html code-button--color">
                     <b className="code-button__bracket">&lt;</b>
                     <span className="code-button__code">/</span>
                     <span className="code-button__text">Delpoy</span>
@@ -127,30 +132,27 @@ function Home() {
                   diligently. I pride myself on delivering reliable, scalable,
                   and continuously monitored solutions.
                 </p>
-
               </div>
             </div>
           )}
         </section>
 
         <section className="thirdSection">
-          {!modal2 ?
+          {!modal2 ? (
             <div>
-              <div >
+              <div>
                 <h1>Who I am</h1>
               </div>
               <div>
-                <button className="learn-more">
+                <button onClick={handleStateModal2} className="learn-more">
                   <span className="circle" aria-hidden="true">
                     <span className="icon arrow"></span>
                   </span>
-                  <span onClick={handleStateModal2} className="button-text2">
-                    Learn More
-                  </span>
+                  <span className="button-text2">Learn More</span>
                 </button>
               </div>
             </div>
-            :
+          ) : (
             <div className="containerCards2 animate__animated animate__jackInTheBox">
               <div>
                 <img src="/profile.jpg" alt="" />
@@ -159,16 +161,43 @@ function Home() {
                 <div className="titleWhoIAm">
                   <h2>Full Stack Development</h2>
                   <div className="code-loader">
-                    <span>{'{'} </span>
-                    <span>{'}'}</span>
-                  </div></div>
+                    <span>{"{"} </span>
+                    <span>{"}"}</span>
+                  </div>
+                </div>
                 <div className="infoWhoIAm">
-                  <p>Passionate about Information Technology and specialized in Web Development with a focus on Backend. My dynamism and proactivity drive me to tackle challenges and achieve results, supported by my education and experience in web development. I am committed to contributing creative and efficient solutions to innovative projects.</p>
+                  <p>
+                    Passionate about Information Technology and specialized in
+                    Web Development with a focus on Backend. My dynamism and
+                    proactivity drive me to tackle challenges and achieve
+                    results, supported by my education and experience in web
+                    development. I am committed to contributing creative and
+                    efficient solutions to innovative projects.
+                  </p>
                 </div>
               </div>
             </div>
+          )}
+        </section>
 
-          }
+        <section className="fourSection">
+          {!modal3 ? (
+            <div className="titleWork">
+              <h1>My work</h1>
+              <button onClick={handleStateModal3} className="learn-more">
+                <span className="circle" aria-hidden="true">
+                  <span className="icon arrow"></span>
+                </span>
+                <span className="button-text">Learn More</span>
+              </button>
+            </div>
+          ) : (
+            <div className="">
+              <div className="cardContainerWork">
+                <div className="cardWork"></div>
+              </div>
+            </div>
+          )}
         </section>
       </main>
 
