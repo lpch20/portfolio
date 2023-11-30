@@ -608,7 +608,7 @@ button:hover .button-text2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 
@@ -668,7 +668,10 @@ button:hover .button-text2 {
 .containerProjects{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px
+  gap: 20px;
+  padding-top: 40px; 
+  padding-bottom: 40px;
+  justify-content: center;
 }
 
 
@@ -752,4 +755,89 @@ button:hover .button-text2 {
 
 .icons{
   width: 40px;
+}
+
+/*FOOTER*/
+
+.footer{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  background-color: black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.containerFoot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: auto;
+  max-width: 1000px;
+  gap: 20px;
+}
+
+.social-links,.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  background: white;
+  margin: 5px;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.social-btn svg {
+  height: 24px;
+  width: 24px;
+}
+
+.social-btn img {
+  height: 24px;
+  width: 24px;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.social-btn:hover {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.social-btn:hover span {
+  padding: 2px;
+  width: 80px;
+}
+
+#twitter svg {
+  fill: #1da1f2;
+}
+
+#linkedin svg {
+  fill: #0e76a8;
+}
+
+#github {
+  fill: #333;
+}
+
+.email{
+  color: rgb(99, 98, 97)
 }
