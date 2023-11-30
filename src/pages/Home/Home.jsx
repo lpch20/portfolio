@@ -221,7 +221,7 @@ function Home() {
                       <img className='icons' src="/icons8-css.svg" alt="" />
                       <img className='icons' src="/icons8-javascript.svg" alt="" />
                     </div>
-                    <Link to="https://viemventura.com.uy/">
+                    <Link to="https://viemventura.com.uy/"  target="_blank" rel="noopener noreferrer">
                       <button className="go-page">
                         <span className="circle" aria-hidden="true">
                           <span className="icon arrow"></span>
@@ -245,7 +245,7 @@ function Home() {
                       <img className='icons' src="/icons8-nodo-js.svg" alt="" />
                       <img className='icons' src="/icons8-sql-64.png" alt="" />
                     </div>
-                    <Link to="https://viemventuralink.com.uy/">
+                    <Link to="https://viemventuralink.com.uy/"  target="_blank" rel="noopener noreferrer">
                       <button className="go-page">
                         <span className="circle" aria-hidden="true">
                           <span className="icon arrow"></span>
@@ -269,7 +269,7 @@ function Home() {
                       <img className='icons' src="/icons8-nodo-js.svg" alt="" />
                       <img className='icons' src="/icons8-sql-64.png" alt="" />
                     </div>
-                    <Link to="https://front-final-project.vercel.app/">
+                    <Link to="https://front-final-project.vercel.app/"  target="_blank" rel="noopener noreferrer">
                       <button className="go-page">
                         <span className="circle" aria-hidden="true">
                           <span className="icon arrow"></span>
@@ -291,7 +291,7 @@ function Home() {
                       <img className='icons' src="/icons8-css.svg" alt="" />
                       <img className='icons' src="/icons8-javascript.svg" alt="" />
                     </div>
-                    <Link to="https://pokedex-one-pi.vercel.app/">
+                    <Link to="https://pokedex-one-pi.vercel.app/" target="_blank" rel="noopener noreferrer">
                       <button className="go-page">
                         <span className="circle" aria-hidden="true">
                           <span className="icon arrow"></span>
