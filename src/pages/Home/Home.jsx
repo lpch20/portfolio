@@ -3,6 +3,7 @@ import "./home.css";
 import NavBar from "./../../components/NavBar/NavBar.jsx";
 import "animate.css";
 import { useState } from "react";
+import { Link } from 'react-router-dom'
 
 
 function Home() {
@@ -202,63 +203,100 @@ function Home() {
               </button>
             </div>
           ) : (
-            <div className="projectsView">
+            <div className="projectsView animate__animated animate__jackInTheBox">
               <div className="myProjects">
                 <h2>These are my works....</h2>
               </div>
               <div className="containerProjects">
                 <div className="cardWork">
-                  <img src="/viemventuraLinkPage.png" alt="" />
+                  <img className="pageImage" src="/viemventuraPage.png" alt="" />
                   <div className="card__content">
-                    <p className="card__title">Card Title</p>
+                    <p className="card__title">Viemventura</p>
                     <p className="card__description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
+                      Viemventura is a website where individuals can check their debt with specific financial institutions. It was a project completed in 2023 for the company where I work.
                     </p>
+                    <div>
+                      <img className='icons' src="/icons8-html.svg" alt="" />
+                      <img className='icons' src="/icons8-css.svg" alt="" />
+                      <img className='icons' src="/icons8-javascript.svg" alt="" />
+                    </div>
+                    <Link to="https://viemventura.com.uy/">
+                      <button className="go-page">
+                        <span className="circle" aria-hidden="true">
+                          <span className="icon arrow"></span>
+                        </span>
+                        <span className="button-text">Go to page</span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="cardWork">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
-                  </svg>
+                  <img className="pageImage" src="/viemventuraLinkPage.png" alt="" />
                   <div className="card__content">
-                    <p className="card__title">Card Title</p>
+                    <p className="card__title">Viemventura.link</p>
                     <p className="card__description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
+                      Viemventura.link: debtor portal to view, simulate payments, and make payments through an integrated gateway on the subdomain of Viemventura
                     </p>
+                    <div>
+                      <img className='icons' src="/icons8-html.svg" alt="" />
+                      <img className='icons' src="/icons8-css.svg" alt="" />
+                      <img className='icons' src="/icons8-javascript.svg" alt="" />
+                      <img className='icons' src="/icons8-nodo-js.svg" alt="" />
+                    </div>
+                    <Link to="https://viemventuralink.com.uy/">
+                      <button className="go-page">
+                        <span className="circle" aria-hidden="true">
+                          <span className="icon arrow"></span>
+                        </span>
+                        <span className="button-text">Go to page</span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="cardWork">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
-                  </svg>
+                  <img className="pageImage" src="/viemventuraLinkPage.png" alt="" />
                   <div className="card__content">
-                    <p className="card__title">Card Title</p>
+                    <p className="card__title">Viemventura.link</p>
                     <p className="card__description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
+                      Viemventura.link: debtor portal to view, simulate payments, and make payments through an integrated gateway on the subdomain of Viemventura
                     </p>
+                    <div>
+                      <img className='icons' src="/icons8-html.svg" alt="" />
+                      <img className='icons' src="/icons8-css.svg" alt="" />
+                      <img className='icons' src="/icons8-javascript.svg" alt="" />
+                      <img className='icons' src="/icons8-nodo-js.svg" alt="" />
+                    </div>
+                    <Link to="https://viemventuralink.com.uy/">
+                      <button className="go-page">
+                        <span className="circle" aria-hidden="true">
+                          <span className="icon arrow"></span>
+                        </span>
+                        <span className="button-text">Go to page</span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="cardWork">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
-                  </svg>
+                  <img className="pageImage" src="/viemventuraLinkPage.png" alt="" />
                   <div className="card__content">
-                    <p className="card__title">Card Title</p>
+                    <p className="card__title">Viemventura.link</p>
                     <p className="card__description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
+                      Viemventura.link: debtor portal to view, simulate payments, and make payments through an integrated gateway on the subdomain of Viemventura
                     </p>
+                    <div>
+                      <img className='icons' src="/icons8-html.svg" alt="" />
+                      <img className='icons' src="/icons8-css.svg" alt="" />
+                      <img className='icons' src="/icons8-javascript.svg" alt="" />
+                      <img className='icons' src="/icons8-nodo-js.svg" alt="" />
+                    </div>
+                    <Link to="https://viemventuralink.com.uy/">
+                      <button className="go-page">
+                        <span className="circle" aria-hidden="true">
+                          <span className="icon arrow"></span>
+                        </span>
+                        <span className="button-text">Go to page</span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>

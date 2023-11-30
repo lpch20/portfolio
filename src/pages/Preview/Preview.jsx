@@ -9,7 +9,7 @@ function Preview() {
   const [buttonStyle, setButtonStyle] = useState("none");
 
   const text = "L uciano Piñeyro";
-  const textTitle = " Full Stack Developer";
+  const textTitle = " Full Sta ck Developer";
 
   useEffect(() => {
     let index = 0;
