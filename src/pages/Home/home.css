@@ -339,7 +339,7 @@ button:hover .button-text2 {
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
-.containerCards2{
+.containerCards2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,7 +348,7 @@ button:hover .button-text2 {
   gap: 20px;
 }
 
-.containerCards2 h2{
+.containerCards2 h2 {
   text-align: center;
   font-size: xx-large;
 }
@@ -377,20 +377,22 @@ button:hover .button-text2 {
   }
 }
 
-.titleWhoIAm{
+.titleWhoIAm {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.titleWhoIAm h2{
+
+.titleWhoIAm h2 {
   color: rgb(99, 98, 97);
 }
 
-.infoWhoIAm{
+.infoWhoIAm {
   text-align: center;
 }
-.infoWhoIAm p{
+
+.infoWhoIAm p {
   max-width: 430px;
   color: rgb(99, 98, 97);
 }
@@ -412,7 +414,9 @@ button:hover .button-text2 {
   transition: all 0.2s ease, background-color 0.2s ease-in 0.15s, box-shadow 0.2s ease-in 0.15s, color 0s ease;
 }
 
-.code-button__bracket, .code-button__text, .code-button__code {
+.code-button__bracket,
+.code-button__text,
+.code-button__code {
   display: inline-block;
   margin-right: -3px;
   text-align: center;
@@ -435,11 +439,14 @@ button:hover .button-text2 {
   transition: all 0.2s ease, background-color 0.2s ease-in 0.05s, box-shadow 0.2s ease-in 0.05s, color 0s ease;
 }
 
-.code-button:hover .code-button__code, .code-button:hover .code-button__text {
+.code-button:hover .code-button__code,
+.code-button:hover .code-button__text {
   width: 2em;
 }
 
-.code-button:hover .code-button__code, .code-button:hover .code-button__text, .code-button:hover .code-button__bracket {
+.code-button:hover .code-button__code,
+.code-button:hover .code-button__text,
+.code-button:hover .code-button__bracket {
   transition: all 0.2s ease, color 0s ease;
 }
 
@@ -471,11 +478,26 @@ button:hover .button-text2 {
   background-color: #87e1ed;
   box-shadow: inset 15px 15px 90px -20px #7996d1, inset -15px -5px 80px -10px #87e1ed;
 }
- 
-.animateDiv{
+
+.animateDiv {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
+.fourSection {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 100vh;
+  width: auto;
+}
+
+.titleMyWork{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}

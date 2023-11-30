@@ -170,6 +170,20 @@ function Home() {
 
           }
         </section>
+
+        <section className="fourSection">
+          <div className="titleMyWork">
+            <h1>My work</h1>
+            <button className="learn-more">
+              <span className="circle" aria-hidden="true">
+                <span className="icon arrow"></span>
+              </span>
+              <span onClick={handleStateModal} className="button-text">
+                Learn More
+              </span>
+            </button>
+          </div>
+        </section>
       </main>
 
       <footer></footer>
