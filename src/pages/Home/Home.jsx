@@ -340,7 +340,7 @@ function Home() {
                       <img className='icons' src="/icons8-nodo-js.svg" alt="" />
                       <img className='icons' src="/icons8-sql-64.png" alt="" />
                     </div>
-                    <Link to="https://crm-front-peach.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <Link to="https://compromisos-viem.vercel.app/" target="_blank" rel="noopener noreferrer">
                       <button className="go-page">
                         <span className="circle" aria-hidden="true">
                           <span className="icon arrow"></span>
