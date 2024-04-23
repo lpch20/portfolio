@@ -301,6 +301,55 @@ function Home() {
                     </Link>
                   </div>
                 </div>
+                <div className="cardWork">
+                  <img className="pageImage" src="/crm_vet_home.jpg" alt="" />
+                  <div className="card__content">
+                    <p className="card__title">CRM</p>
+                    <p className="card__description">
+                    CRM is a veterinary management tool designed to allow veterinarians to store their appointments with patients and modify them according to their preferences.
+                    </p>
+                    <div>
+                      <img className='icons' src="/icons8-reaccionar-30.svg" alt="" />
+                      <img className='icons' src="/icons8-css.svg" alt="" />
+                      <img className='icons' src="/tailwind.png" alt="" />
+                      <img className='icons' src="/icons8-javascript.svg" alt="" />
+                      <img className='icons' src="/icons8-nodo-js.svg" alt="" />
+                      <img className='icons' src="/mongodb.png" alt="" />
+                    </div>
+                    <Link to="https://crm-front-peach.vercel.app/" target="_blank" rel="noopener noreferrer">
+                      <button className="go-page">
+                        <span className="circle" aria-hidden="true">
+                          <span className="icon arrow"></span>
+                        </span>
+                        <span className="button-text">Go to page</span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+                <div className="cardWork">
+                  <img className="pageImage" src="/compromisos.jpg" alt="" />
+                  <div className="card__content">
+                    <p className="card__title">Compromisos VIEM</p>
+                    <p className="card__description">
+                    Compromisos VIEM is a client manager for the website viemventuralink.com.uy. It manages clients and modifies the database as needed.
+                    </p>
+                    <div>
+                      <img className='icons' src="/icons8-reaccionar-30.svg" alt="" />
+                      <img className='icons' src="/icons8-css.svg" alt="" />
+                      <img className='icons' src="/icons8-javascript.svg" alt="" />
+                      <img className='icons' src="/icons8-nodo-js.svg" alt="" />
+                      <img className='icons' src="/icons8-sql-64.png" alt="" />
+                    </div>
+                    <Link to="https://crm-front-peach.vercel.app/" target="_blank" rel="noopener noreferrer">
+                      <button className="go-page">
+                        <span className="circle" aria-hidden="true">
+                          <span className="icon arrow"></span>
+                        </span>
+                        <span className="button-text">Go to page</span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           )}
