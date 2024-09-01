@@ -442,6 +442,76 @@ function Home() {
                     </Link>
                   </div>
                 </div>
+                <div className="cardWork">
+                  <img className="pageImage" src="/mideuda.png" alt="" />
+                  <div className="card__content">
+                    <p className="card__title">Mi Deuda</p>
+                    <p className="card__description">
+                      Landing page about the information regarding Uruguay's
+                      debt restructuring plan.
+                    </p>
+                    <div>
+                      <img className="icons" src="/icons8-html.svg" alt="" />
+                      <img className="icons" src="/icons8-css.svg" alt="" />
+                      <img
+                        className="icons"
+                        src="/icons8-javascript.svg"
+                        alt=""
+                      />
+                    </div>
+                    <Link
+                      to="https://www.mideuda.com.uy/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="go-page">
+                        <span className="circle" aria-hidden="true">
+                          <span className="icon arrow"></span>
+                        </span>
+                        <span className="button-text">Go to page</span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+                <div className="cardWork">
+                  <img className="pageImage" src="/mideudalink.png" alt="" />
+                  <div className="card__content">
+                    <p className="card__title">Mi Deuda Link</p>
+                    <p className="card__description">
+                      Debt management page for Viemventura clients under
+                      Uruguay's refinancing plan. Clients can make payments and
+                      keep track of their payments history.
+                    </p>
+                    <div>
+                      <img
+                        className="icons"
+                        src="/icons8-reaccionar-30.svg"
+                        alt=""
+                      />
+                      <img className="icons" src="/icons8-css.svg" alt="" />
+                      <img
+                        className="icons"
+                        src="/icons8-javascript.svg"
+                        alt=""
+                      />
+                      <img className="icons" src="/icons8-nodo-js.svg" alt="" />
+                      <img className="icons" src="/posgres.svg" alt="" />
+                      <img className="icons" src="/tailwind.png" alt="" />
+                    </div>
+                    <Link
+                      to="https://www.mideudalink.com.uy/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="go-page">
+                        <span className="circle" aria-hidden="true">
+                          <span className="icon arrow"></span>
+                        </span>
+                        <span className="button-text">Go to page</span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           )}
