@@ -55,7 +55,17 @@
 }
 
 .whatIDoSection {
+  max-width: 800px;
   text-align: center;
+}
+
+.titleOfSection{
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonLearnMore {
+  padding-left: 30px;
 }
 
 .loader {
@@ -165,6 +175,8 @@
 }
 
 .secondSection {
+  max-width: 1400px;
+  margin: auto;
   min-height: 100vh;
   width: auto;
   display: flex;
@@ -390,6 +402,19 @@ button:hover .button-text2 {
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
 }
 
+.cardWhatIDos {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  color: white;
+  width: auto;
+  height: auto;
+  border-radius: 30px;
+  background: #212121;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+}
+
 .containerCards {
   display: flex;
   flex-wrap: wrap;
@@ -422,6 +447,22 @@ button:hover .button-text2 {
 
 .thirdSection h1 {
   color: rgb(99, 98, 97);
+}
+
+.technologies {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.technologies img{
+  width: 150px;
+  padding: 20px;
 }
 
 .card {
@@ -595,6 +636,8 @@ button:hover .button-text2 {
 }
 
 .fourSection {
+  max-width: 1400px;
+  margin: auto;
   background-color: white;
   min-height: 100vh;
   height: auto;
@@ -838,6 +881,6 @@ button:hover .button-text2 {
   fill: #333;
 }
 
-.email{
-  color: rgb(99, 98, 97)
+.email a{
+  color: #E74B3B
 }
