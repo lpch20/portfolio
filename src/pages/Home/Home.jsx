@@ -512,6 +512,50 @@ function Home() {
                     </Link>
                   </div>
                 </div>
+                <div className="cardWork">
+                  <img className="pageImage" src="/mideudalink.png" alt="" />
+                  <div className="card__content">
+                    <p className="card__title">Mafloma</p>
+                    <p className="card__description">
+                      An e-commerce platform featuring inventory management for
+                      administrators and secure payment processing through a
+                      payment gateway.
+                    </p>
+                    <div>
+                      <img
+                        className="icons"
+                        src="/Next.js.svg"
+                        alt=""
+                      />
+                      <img
+                        className="icons"
+                        src="/icons8-reaccionar-30.svg"
+                        alt=""
+                      />
+                      <img className="icons" src="/icons8-css.svg" alt="" />
+                      <img
+                        className="icons"
+                        src="/icons8-javascript.svg"
+                        alt=""
+                      />
+                      <img className="icons" src="/icons8-nodo-js.svg" alt="" />
+                      <img className="icons" src="/posgres.svg" alt="" />
+                      <img className="icons" src="/tailwind.png" alt="" />
+                    </div>
+                    <Link
+                      to="https://www.mafloma.com.uy/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="go-page">
+                        <span className="circle" aria-hidden="true">
+                          <span className="icon arrow"></span>
+                        </span>
+                        <span className="button-text">Go to page</span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           )}
