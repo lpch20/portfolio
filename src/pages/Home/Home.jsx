@@ -513,7 +513,7 @@ function Home() {
                   </div>
                 </div>
                 <div className="cardWork">
-                  <img className="pageImage" src="/mideudalink.png" alt="" />
+                  <img className="pageImage" src="/maflomaPage.png" alt="" />
                   <div className="card__content">
                     <p className="card__title">Mafloma</p>
                     <p className="card__description">
